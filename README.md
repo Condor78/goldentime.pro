@@ -360,71 +360,210 @@
         <div id="adminSection" class="section">
             <h2>⚙️ Modalità Amministratore</h2>
             
-            <div class="form-grid">
-                <!-- Add Employee Form -->
-                <div class="form-section">
-                    <h3>👤 Aggiungi Dipendente</h3>
-                    
-                    <div class="form-group">
-                        <label>Matricola:</label>
-                        <input type="text" id="empMatricola" placeholder="es. EMP004">
-                    </div>
-                    <div class="form-group">
-                        <label>Nome Completo:</label>
-                        <input type="text" id="empName" placeholder="es. Mario Rossi">
-                    </div>
-                    <div class="form-group">
-                        <label>Email:</label>
-                        <input type="email" id="empEmail" placeholder="es. mario@company.com">
-                    </div>
-                    <div class="form-group">
-                        <label>Ruolo:</label>
-                        <input type="text" id="empRole" placeholder="es. Sviluppatore">
-                    </div>
-                    <div class="form-group">
-                        <label>Reparto:</label>
-                        <select id="empDepartment">
-                            <option value="">Seleziona reparto</option>
-                            <option value="IT">IT</option>
-                            <option value="Vendite">Vendite</option>
-                            <option value="Marketing">Marketing</option>
-                            <option value="Amministrazione">Amministrazione</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Badge NFC ID:</label>
-                        <input type="text" id="empNfcId" placeholder="es. NFC004">
-                    </div>
-                    
-                    <button class="btn btn-success" onclick="addEmployeeSimple()">
-                        ➕ Aggiungi Dipendente
-                    </button>
-                    
-                    <button class="btn btn-secondary" onclick="addTestEmployee()">
-                        🧪 Aggiungi Test Employee
-                    </button>
-                </div>
+            <!-- Admin Tabs -->
+            <div style="margin-bottom: 30px; text-align: center;">
+                <button class="btn active" id="employeesTabBtn" onclick="showAdminTab('employees')">
+                    👤 Gestione Dipendenti
+                </button>
+                <button class="btn" id="importTabBtn" onclick="showAdminTab('import')">
+                    📥 Importazione Massa
+                </button>
+                <button class="btn" id="reportsTabBtn" onclick="showAdminTab('reports')">
+                    📊 Report & Statistiche
+                </button>
+            </div>
 
-                <!-- Employee List -->
-                <div class="form-section">
-                    <h3>📋 Lista Dipendenti</h3>
-                    <div style="margin-bottom: 15px;">
-                        <strong>Totale Dipendenti: <span id="employeeCount">0</span></strong>
+            <!-- Employees Tab -->
+            <div id="employeesTabContent" class="admin-tab-content">
+                <div class="form-grid">
+                    <!-- Add Employee Form -->
+                    <div class="form-section">
+                        <h3>👤 Aggiungi Dipendente Singolo</h3>
+                        
+                        <div class="form-group">
+                            <label>Matricola:</label>
+                            <input type="text" id="empMatricola" placeholder="es. EMP004">
+                        </div>
+                        <div class="form-group">
+                            <label>Nome Completo:</label>
+                            <input type="text" id="empName" placeholder="es. Mario Rossi">
+                        </div>
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input type="email" id="empEmail" placeholder="es. mario@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Ruolo:</label>
+                            <input type="text" id="empRole" placeholder="es. Sviluppatore">
+                        </div>
+                        <div class="form-group">
+                            <label>Reparto:</label>
+                            <select id="empDepartment">
+                                <option value="">Seleziona reparto</option>
+                                <option value="IT">IT</option>
+                                <option value="Vendite">Vendite</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Amministrazione">Amministrazione</option>
+                                <option value="HR">Risorse Umane</option>
+                                <option value="Produzione">Produzione</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Badge NFC ID:</label>
+                            <input type="text" id="empNfcId" placeholder="es. NFC004">
+                        </div>
+                        
+                        <button class="btn btn-success" onclick="addEmployeeSimple()">
+                            ➕ Aggiungi Dipendente
+                        </button>
+                        
+                        <button class="btn btn-secondary" onclick="addTestEmployee()">
+                            🧪 Aggiungi Test Employee
+                        </button>
                     </div>
+
+                    <!-- Employee List -->
+                    <div class="form-section">
+                        <h3>📋 Lista Dipendenti</h3>
+                        <div style="margin-bottom: 15px;">
+                            <strong>Totale Dipendenti: <span id="employeeCount">0</span></strong>
+                        </div>
+                        
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Matricola</th>
+                                    <th>Nome</th>
+                                    <th>NFC ID</th>
+                                    <th>Stato</th>
+                                    <th>Azioni</th>
+                                </tr>
+                            </thead>
+                            <tbody id="employeeTableBody">
+                                <!-- Will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Import Tab -->
+            <div id="importTabContent" class="admin-tab-content" style="display: none;">
+                <div class="form-grid">
+                    <!-- CSV Import -->
+                    <div class="form-section">
+                        <h3>📥 Importazione CSV</h3>
+                        
+                        <div style="background: #e8f5e8; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                            <h4 style="color: #28a745;">📋 Formato CSV Richiesto:</h4>
+                            <code style="background: white; padding: 10px; border-radius: 5px; display: block; margin-top: 10px; font-size: 12px;">
+                                matricola,nome,email,ruolo,reparto,nfc_id<br>
+                                EMP001,Mario Rossi,mario@company.com,Developer,IT,NFC001<br>
+                                EMP002,Laura Bianchi,laura@company.com,Designer,Marketing,NFC002
+                            </code>
+                        </div>
+
+                        <div class="form-group">
+                            <label>1. Scarica Template CSV:</label>
+                            <button class="btn btn-secondary" onclick="downloadCSVTemplate()">
+                                📄 Scarica Template Vuoto
+                            </button>
+                            <button class="btn" onclick="downloadCSVExample()">
+                                📋 Scarica Template con Esempi
+                            </button>
+                        </div>
+
+                        <div class="form-group">
+                            <label>2. Seleziona File CSV da Importare:</label>
+                            <div id="dropZone" style="border: 3px dashed #d4af37; padding: 40px; text-align: center; border-radius: 10px; cursor: pointer; background: #fff8e1;" onclick="document.getElementById('csvFileInput').click()">
+                                <div style="font-size: 3rem; margin-bottom: 10px;">📁</div>
+                                <div><strong>Clicca qui o trascina il file CSV</strong></div>
+                                <div style="margin-top: 10px; color: #666;">File supportati: .csv</div>
+                            </div>
+                            <input type="file" id="csvFileInput" accept=".csv" style="display: none;" onchange="handleCSVImport(event)">
+                        </div>
+
+                        <div id="importPreview" style="display: none; margin-top: 20px;">
+                            <h4>👀 Anteprima Importazione:</h4>
+                            <div id="previewContent" style="background: #f8f9fa; padding: 15px; border-radius: 10px; max-height: 200px; overflow-y: auto;"></div>
+                            <div style="margin-top: 15px;">
+                                <button class="btn btn-success" onclick="confirmImport()">
+                                    ✅ Conferma Importazione
+                                </button>
+                                <button class="btn btn-secondary" onclick="cancelImport()">
+                                    ❌ Annulla
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Import Statistics -->
+                    <div class="form-section">
+                        <h3>📊 Statistiche Importazione</h3>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+                            <div style="background: #e8f5e8; padding: 20px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 2rem; font-weight: bold; color: #28a745;" id="importSuccessCount">0</div>
+                                <div>Importazioni Riuscite</div>
+                            </div>
+                            <div style="background: #ffe8e8; padding: 20px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 2rem; font-weight: bold; color: #dc3545;" id="importErrorCount">0</div>
+                                <div>Errori Importazione</div>
+                            </div>
+                        </div>
+
+                        <div id="importLog" style="background: #f8f9fa; padding: 15px; border-radius: 10px; max-height: 300px; overflow-y: auto;">
+                            <h4>📝 Log Importazioni:</h4>
+                            <div id="importLogContent">
+                                <div style="color: #666; font-style: italic;">Nessuna importazione ancora effettuata</div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 20px;">
+                            <button class="btn btn-secondary" onclick="clearImportLog()">
+                                🗑️ Pulisci Log
+                            </button>
+                            <button class="btn" onclick="exportCurrentEmployees()">
+                                💾 Esporta Dipendenti Attuali
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reports Tab -->
+            <div id="reportsTabContent" class="admin-tab-content" style="display: none;">
+                <div class="form-section">
+                    <h3>📊 Statistiche Sistema</h3>
                     
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Matricola</th>
-                                <th>Nome</th>
-                                <th>Stato</th>
-                                <th>Azioni</th>
-                            </tr>
-                        </thead>
-                        <tbody id="employeeTableBody">
-                            <!-- Will be populated by JavaScript -->
-                        </tbody>
-                    </table>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                        <div style="background: #e8f5e8; padding: 25px; border-radius: 15px; text-align: center; border: 2px solid #28a745;">
+                            <div style="font-size: 3rem; font-weight: bold; color: #28a745;" id="totalEmployeesReport">0</div>
+                            <div style="font-size: 1.2rem; font-weight: bold;">Dipendenti Totali</div>
+                        </div>
+                        <div style="background: #e8f4fd; padding: 25px; border-radius: 15px; text-align: center; border: 2px solid #007bff;">
+                            <div style="font-size: 3rem; font-weight: bold; color: #007bff;" id="employeesInService">0</div>
+                            <div style="font-size: 1.2rem; font-weight: bold;">In Servizio Ora</div>
+                        </div>
+                        <div style="background: #fff8e1; padding: 25px; border-radius: 15px; text-align: center; border: 2px solid #ffc107;">
+                            <div style="font-size: 3rem; font-weight: bold; color: #f57c00;" id="totalPunchesToday">0</div>
+                            <div style="font-size: 1.2rem; font-weight: bold;">Timbrature Oggi</div>
+                        </div>
+                        <div style="background: #f3e5f5; padding: 25px; border-radius: 15px; text-align: center; border: 2px solid #9c27b0;">
+                            <div style="font-size: 3rem; font-weight: bold; color: #9c27b0;" id="departmentCount">0</div>
+                            <div style="font-size: 1.2rem; font-weight: bold;">Reparti Attivi</div>
+                        </div>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                        <h4>📈 Report Rapido</h4>
+                        <button class="btn" onclick="generateQuickReport()">
+                            📄 Genera Report Dipendenti
+                        </button>
+                        <button class="btn btn-secondary" onclick="generatePunchReport()">
+                            ⏰ Report Timbrature
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
