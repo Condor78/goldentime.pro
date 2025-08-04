@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>GoldenTime Pro - Test Locale</title>
+  <title>GoldenTime Pro - Importa da file CSV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -52,23 +52,6 @@
       background: #6c757d;
       color: white;
     }
-    textarea {
-      width: 100%;
-      padding: 10px;
-      font-size: 14px;
-      margin-top: 10px;
-      font-family: monospace;
-    }
-    .btn {
-      margin-top: 10px;
-      padding: 10px 20px;
-      background: #d4af37;
-      color: #1a365d;
-      font-weight: bold;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-    }
     .notification {
       position: fixed;
       top: 20px;
@@ -86,15 +69,14 @@
   <div class="container">
     <div class="header">
       <h1>🕐 GoldenTime Pro</h1>
-      <p>Versione Test Locale (Senza n8n)</p>
+      <p>Importazione da file CSV funzionante</p>
     </div>
 
     <h3>👥 Dipendenti</h3>
     <div class="employee-grid" id="employeeGrid"></div>
 
-    <h3 style="margin-top:40px;">📥 Importazione di Massa</h3>
-    <textarea id="csvInput" rows="6" placeholder="matricola,nome,ruolo"></textarea>
-    <button class="btn" onclick="importCSV()">Importa Dipendenti</button>
+    <h3 style="margin-top:40px;">📤 Carica file CSV</h3>
+    <input type="file" id="csvFile" accept=".csv">
   </div>
 
   <script>
@@ -129,34 +111,46 @@
       showNotification(`${emp.name} ha timbrato ${emp.clockedIn ? 'ENTRATA' : 'USCITA'}`);
     }
 
-    function importCSV() {
-      const input = document.getElementById("csvInput").value.trim();
-      if (!input) return showNotification("CSV vuoto", "error");
+    function importFromCSVFile(file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const text = e.target.result;
+        const lines = text.trim().split('\n');
+        let maxId = Math.max(0, ...employees.map(e => e.id));
+        let importati = 0;
 
-      const lines = input.split('\n');
-      let nextId = Math.max(0, ...employees.map(e => e.id)) + 1;
-      let importati = 0;
+        lines.forEach(line => {
+          const parts = line.split(',').map(p => p.trim());
+          if (parts.length !== 3) return;
+          const [matricola, name, role] = parts;
 
-      lines.forEach(line => {
-        const [matricola, name, role] = line.split(',').map(p => p.trim());
-        if (!matricola || !name || !role) return;
+          if (!matricola || !name || !role) return;
 
-        if (employees.some(e => e.matricola.toUpperCase() === matricola.toUpperCase())) return;
+          const exists = employees.some(e => e.matricola.toUpperCase() === matricola.toUpperCase());
+          if (exists) return;
 
-        employees.push({
-          id: nextId++,
-          matricola,
-          name,
-          role,
-          clockedIn: false
+          employees.push({
+            id: ++maxId,
+            matricola,
+            name,
+            role,
+            clockedIn: false
+          });
+          importati++;
         });
 
-        importati++;
-      });
-
-      loadEmployeeGrid();
-      showNotification(`Importati ${importati} dipendenti`);
+        loadEmployeeGrid();
+        showNotification(`✅ Importati ${importati} dipendenti`);
+      };
+      reader.readAsText(file);
     }
+
+    document.getElementById("csvFile").addEventListener("change", function () {
+      const file = this.files[0];
+      if (file) {
+        importFromCSVFile(file);
+      }
+    });
 
     function showNotification(msg, type = "success") {
       const div = document.createElement("div");
