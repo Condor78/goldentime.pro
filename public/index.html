@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GoldenTime Linen - Wanderlust</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">GT</span>
+      <div>
+        <div class="title">GoldenTime Linen</div>
+        <div class="subtitle">Consumi biancheria - Wanderlust 1 / 2 / 12</div>
+      </div>
+    </div>
+    <nav class="tabs">
+      <button class="tab active" data-view="dashboard">Dashboard</button>
+      <button class="tab" data-view="bookings">Prenotazioni</button>
+      <button class="tab" data-view="non-conforming">Non conformi</button>
+      <button class="tab" data-view="reports">Report</button>
+      <button class="tab" data-view="apartments">Appartamenti</button>
+      <button class="tab" data-view="gmail">Gmail</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- DASHBOARD -->
+    <section class="view active" id="view-dashboard">
+      <div class="row">
+        <div class="card flex-1">
+          <h2>Check-in oggi e prossimi 7 giorni</h2>
+          <div id="upcoming-checkins" class="list"></div>
+        </div>
+        <div class="card">
+          <h2>Stato Gmail</h2>
+          <div id="gmail-status-card" class="muted">Caricamento...</div>
+          <button id="btn-sync-now" class="btn primary">Sincronizza ora</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKINGS -->
+    <section class="view" id="view-bookings">
+      <div class="card">
+        <div class="row between">
+          <h2>Prenotazioni</h2>
+          <div>
+            <button id="btn-new-booking" class="btn">+ Nuova manuale</button>
+            <button id="btn-import-text" class="btn">Incolla email</button>
+          </div>
+        </div>
+        <div class="filters">
+          <label>Da <input type="date" id="filter-from" /></label>
+          <label>A <input type="date" id="filter-to" /></label>
+          <label>App.
+            <select id="filter-apt"><option value="">Tutti</option></select>
+          </label>
+          <button class="btn small" id="btn-filter">Applica</button>
+        </div>
+        <div id="bookings-table"></div>
+      </div>
+      <div class="card" id="booking-detail" style="display:none;">
+        <h2 id="bd-title">Prenotazione</h2>
+        <div id="bd-content"></div>
+      </div>
+    </section>
+
+    <!-- NON CONFORMING -->
+    <section class="view" id="view-non-conforming">
+      <div class="card">
+        <h2>Registro non conformi</h2>
+        <form id="form-nc" class="grid">
+          <label>Articolo<select name="item_code" required></select></label>
+          <label>Quantità<input type="number" name="qty" min="1" value="1" required /></label>
+          <label>Motivo
+            <select name="reason" required>
+              <option value="">-</option>
+              <option>Macchia</option>
+              <option>Strappo</option>
+              <option>Mancante</option>
+              <option>Usura</option>
+              <option>Bruciatura</option>
+              <option>Altro</option>
+            </select>
+          </label>
+          <label>Appartamento
+            <select name="apartment_code"><option value="">-</option></select>
+          </label>
+          <label>Prenotazione (opzionale)<input type="number" name="booking_id" placeholder="ID prenotazione" /></label>
+          <label class="col-2">Note<input type="text" name="notes" /></label>
+          <button class="btn primary col-2">Registra</button>
+        </form>
+      </div>
+      <div class="card">
+        <h2>Storico</h2>
+        <div id="nc-table"></div>
+      </div>
+    </section>
+
+    <!-- REPORTS -->
+    <section class="view" id="view-reports">
+      <div class="card">
+        <h2>Report consumi</h2>
+        <div class="filters">
+          <label>Da <input type="date" id="rep-from" /></label>
+          <label>A <input type="date" id="rep-to" /></label>
+          <label>App.
+            <select id="rep-apt"><option value="">Tutti</option></select>
+          </label>
+          <button class="btn small" id="btn-report">Calcola</button>
+        </div>
+        <div id="report-output"></div>
+      </div>
+    </section>
+
+    <!-- APARTMENTS -->
+    <section class="view" id="view-apartments">
+      <div class="card">
+        <h2>Appartamenti configurati</h2>
+        <div id="apt-table"></div>
+        <p class="muted">Le regole di calcolo sono definite nel backend (src/supplies.js).</p>
+      </div>
+    </section>
+
+    <!-- GMAIL -->
+    <section class="view" id="view-gmail">
+      <div class="card">
+        <h2>Connessione Gmail</h2>
+        <div id="gmail-detail" class="muted">Caricamento...</div>
+        <div class="row" style="gap:8px;">
+          <a href="/api/gmail/auth" class="btn primary" id="btn-gmail-connect">Connetti Gmail</a>
+          <button class="btn" id="btn-gmail-sync">Sincronizza ora</button>
+        </div>
+        <details style="margin-top:16px;">
+          <summary>Setup credenziali (prima volta)</summary>
+          <ol class="muted">
+            <li>Vai su <code>console.cloud.google.com</code>, crea un progetto.</li>
+            <li>Abilita l'API Gmail. Configura OAuth consent screen (External, scope <code>gmail.readonly</code>).</li>
+            <li>Crea credenziali OAuth client ID (Tipo: Web application).</li>
+            <li>Aggiungi come Authorized redirect URI: <code id="redirect-uri-hint"></code></li>
+            <li>Copia Client ID e Client Secret in <code>.env</code>, riavvia l'app.</li>
+            <li>Premi "Connetti Gmail" e autorizza con l'account <code>prenotazioni40@gmail.com</code>.</li>
+          </ol>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal-root"></div>
+  <div id="toast"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "goldentime-linen",
+  "version": "0.1.0",
+  "description": "Gestione consumi biancheria per locazione turistica (Wanderlust) con import prenotazioni KrossBooking via Gmail.",
+  "private": true,
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/seed.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "googleapis": "^144.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
