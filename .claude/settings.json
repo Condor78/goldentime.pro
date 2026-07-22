@@ -1,12 +1,23 @@
 {
   "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/session-start-sync.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
     "SessionEnd": [
       {
         "hooks": [
           {
             "type": "command",
             "command": "bash .claude/hooks/devlog.sh",
-            "timeout": 15
+            "timeout": 45
           }
         ]
       }
