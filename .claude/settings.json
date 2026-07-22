@@ -21,6 +21,18 @@
           }
         ]
       }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/periodic-autosave.sh",
+            "timeout": 30,
+            "async": true
+          }
+        ]
+      }
     ]
   },
   "permissions": {
