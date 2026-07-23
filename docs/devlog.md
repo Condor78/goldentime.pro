@@ -25,3 +25,7 @@ Log automatico delle sessioni Claude Code, generato dallo hook SessionEnd (`.cla
 ## 2026-07-23 17:56 - vm - branch `claude/missing-conversations-code-x2ez3k` (fine sessione: other)
 - Autosave: nessuna modifica da salvare
 - Ultimo commit: 723f958 Devlog: log fine sessione 2026-07-23
+
+## 2026-07-23 18:36 - vm - branch `claude/missing-conversations-code-x2ez3k` (fine sessione: other)
+- Autosave: nessuna modifica da salvare
+- Ultimo commit: 9f4f622 Autosave periodico: 2026-07-23 18:02 su vm
