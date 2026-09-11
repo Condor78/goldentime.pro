@@ -1,0 +1,927 @@
+[
+ {
+  "pg_name": "Riparazione casa - Pronto intervento",
+  "pg_phone": "+39 366 4106330",
+  "pg_street": "Via Madonna, 73",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Riparazione casa - Pronto intervento Via Madonna, 73 Conegliano",
+  "places": [
+   {
+    "title": "Repairy Riparazione Elettrodomestici by HI-FI STUDIO",
+    "address": "Via Daniele Manin, 65, 31015 Conegliano TV",
+    "phoneNumber": "0438 62475",
+    "website": "https://www.repairy.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Buosi Impianti",
+  "pg_phone": "+39 348 3831990",
+  "pg_street": "Via Senatore Fabbri, 14/E",
+  "pg_cap": "31027",
+  "pg_locality": "Spresiano",
+  "serperQuery": "Buosi Impianti Via Senatore Fabbri, 14/E Spresiano",
+  "places": []
+ },
+ {
+  "pg_name": "Luigi Peccolo Impianti Elettrici",
+  "pg_phone": "+39 0438 23188",
+  "pg_street": "Via Carlo Rosselli, 35",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Luigi Peccolo Impianti Elettrici Via Carlo Rosselli, 35 Conegliano",
+  "places": []
+ },
+ {
+  "pg_name": "Star Tec",
+  "pg_phone": "+39 335 259130",
+  "pg_street": "Via Cal dell'Oca, 24",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Star Tec Via Cal dell'Oca, 24 Conegliano",
+  "places": [
+   {
+    "title": "Impianti Elettrici Star Tec Star Tec Srl",
+    "address": "Calle Dell'Oca, 24, 31015 Case Tolonet TV",
+    "phoneNumber": "0438 21170",
+    "website": "https://www.impiantielettricistartec.com/"
+   }
+  ]
+ },
+ {
+  "pg_name": "B.T.I. S.n.c. di Bortot & Toffoli",
+  "pg_phone": "+39 0438 60198",
+  "pg_street": "Via Gellera, 29",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "B.T.I. S.n.c. di Bortot & Toffoli Via Gellera, 29 Conegliano",
+  "places": [
+   {
+    "title": "B.t.i. (S.n.c.)",
+    "address": "Via dei Mille, 29, 31015 Conegliano TV",
+    "phoneNumber": "0438 60198",
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "Ceschin Impianti Elettrici S.r.l.",
+  "pg_phone": "+39 0438 410469",
+  "pg_street": "Viale Italia, 312",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Ceschin Impianti Elettrici S.r.l. Viale Italia, 312 Conegliano",
+  "places": [
+   {
+    "title": "Ceschin Impianti Elettrici s.r.l.",
+    "address": "Viale Italia, 312",
+    "phoneNumber": "0438 410419",
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "Corbanese Roberto",
+  "pg_phone": "+39 0438 418001",
+  "pg_street": "Via Abruzzi, 11",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Corbanese Roberto Via Abruzzi, 11 Conegliano",
+  "places": [
+   {
+    "title": "Crea96 di Corbanese Roberto",
+    "address": "Via A. Rosmini, 43, 31015 Conegliano TV",
+    "phoneNumber": "0438 418001",
+    "website": "https://www.crea96.com/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Corbanese Roberto",
+  "pg_phone": "+39 0438 418001",
+  "pg_street": "Via Rosmini Antonio, 43",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Corbanese Roberto Via Rosmini Antonio, 43 Conegliano",
+  "places": [
+   {
+    "title": "Crea96 di Corbanese Roberto",
+    "address": "Via A. Rosmini, 43, 31015 Conegliano TV",
+    "phoneNumber": "0438 418001",
+    "website": "https://www.crea96.com/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Cosmo S.a.s. di Barbazza Luca & C.",
+  "pg_phone": "+39 0438 682626",
+  "pg_street": "Via Crosetta, 26/A",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Cosmo S.a.s. di Barbazza Luca & C. Via Crosetta, 26/A Conegliano",
+  "places": []
+ },
+ {
+  "pg_name": "Da Rui Impianti S.r.l.",
+  "pg_phone": "+39 0438 21231",
+  "pg_street": "Via Piovesana Maggiore Giovanni, 101",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Da Rui Impianti S.r.l. Via Piovesana Maggiore Giovanni, 101 Conegliano",
+  "places": [
+   {
+    "title": "Da Rui Impianti Srl",
+    "address": "Via Maggiore G. Piovesana, 101, 31015 Conegliano TV",
+    "phoneNumber": "0438 21231",
+    "website": "https://darui.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Fidelity Service Idraulico Pronto Intervento ",
+  "pg_phone": "+39 320 2437499",
+  "pg_street": "Via Madonna, 73",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Fidelity Service Idraulico Pronto Intervento Via Madonna, 73 Conegliano",
+  "places": []
+ },
+ {
+  "pg_name": "Termoidraulica G.Z.",
+  "pg_phone": "+39 329 2132597",
+  "pg_street": "Via Emilia, 31/a",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Termoidraulica G.Z. Via Emilia, 31/a Conegliano",
+  "places": [
+   {
+    "title": "Termoidraulica G.Z.",
+    "address": null,
+    "phoneNumber": "0438 450133",
+    "website": "https://www.termoidraulica-gz.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Lattonieri Gatti",
+  "pg_phone": "+39 347 9382450",
+  "pg_street": "Via Antonio Rosmini, 40",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Lattonieri Gatti Via Antonio Rosmini, 40 Conegliano",
+  "places": [
+   {
+    "title": "Lattonieri Gatti",
+    "address": "Via A. Rosmini, 40, 31015 Conegliano TV",
+    "phoneNumber": "0438 35595",
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "Idraulica Coneglianese Snc",
+  "pg_phone": "+39 340 7810694",
+  "pg_street": "Via Fabris, 3",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Idraulica Coneglianese Snc Via Fabris, 3 Conegliano",
+  "places": [
+   {
+    "title": "Idraulica Coneglianese SNC",
+    "address": "Via P. Fabris, 3, 31015 Conegliano TV",
+    "phoneNumber": "0438 415230",
+    "website": "http://www.idraulicaconeglianese.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Idrosistemi S.r.l.",
+  "pg_phone": "+39 0438 2084",
+  "pg_street": "Via Martiri delle Foibe, 11/A",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Idrosistemi S.r.l. Via Martiri delle Foibe, 11/A Conegliano",
+  "places": [
+   {
+    "title": "Idrosistemi Srl",
+    "address": "Via Martiri delle Foibe, 11/A, 31015 Scomigo TV",
+    "phoneNumber": null,
+    "website": "http://www.idrosistemi.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "24h Artigian Riparazione Fabbri - Idraulici - Elettricisti",
+  "pg_phone": "+39 347 5957178",
+  "pg_street": "Via Madonna, 13",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "24h Artigian Riparazione Fabbri - Idraulici - Elettricisti Via Madonna, 13 Conegliano",
+  "places": [
+   {
+    "title": "Artigian Casa 24h Fabbro Elettricista Idraulico",
+    "address": "Via Calatafimi, 43, 31015 Conegliano TV",
+    "phoneNumber": "338 435 5066",
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "Corbanese Impianti",
+  "pg_phone": "+39 0438 455380",
+  "pg_street": "Via Manzoni Luigi, 17",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Corbanese Impianti Via Manzoni Luigi, 17 Conegliano",
+  "places": [
+   {
+    "title": "Corbanese Impianti srl",
+    "address": "Via Palù, 84, 31020 San Vendemiano TV",
+    "phoneNumber": "0438 455380",
+    "website": "https://www.corbaneseimpianti.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Ideral di Corbanese",
+  "pg_phone": "+39 348 0169348",
+  "pg_street": "Via Piovesana Maggiore Giovanni, 146",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Ideral di Corbanese Via Piovesana Maggiore Giovanni, 146 Conegliano",
+  "places": [
+   {
+    "title": "Ideral",
+    "address": "Via Maggiore G. Piovesana, 146, 31015 Conegliano TV",
+    "phoneNumber": "0438 35466",
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "Idrotermica Fiorin & De Ronchi S.r.l.",
+  "pg_phone": "+39 0438 412358",
+  "pg_street": "Viale Italia, 315/B",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Idrotermica Fiorin & De Ronchi S.r.l. Viale Italia, 315/B Conegliano",
+  "places": [
+   {
+    "title": "Idrotermica Fiorin & De Ronchi (S.R.L.)",
+    "address": "Viale Italia, 315, 31015 Conegliano TV",
+    "phoneNumber": "0438 412358",
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "Toffoli & Mazzer S.r.l.",
+  "pg_phone": "+39 0438 24991",
+  "pg_street": "Via Piovesana Maggiore Giovanni, 49",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Toffoli & Mazzer S.r.l. Via Piovesana Maggiore Giovanni, 49 Conegliano",
+  "places": [
+   {
+    "title": "Tomasella Rinaldo Group",
+    "address": "Via Daniele Manin, 187, 31015 Conegliano TV",
+    "phoneNumber": "0438 450573",
+    "website": "http://www.tomasellagroup.it/"
+   },
+   {
+    "title": "Tomasella Rinaldo Group",
+    "address": "Viale Italia, 109, 31015 Conegliano TV",
+    "phoneNumber": "0438 62817",
+    "website": "http://www.tomasellagroup.it/"
+   },
+   {
+    "title": "Officine Mazzer Srl",
+    "address": "Str. Pantani da Basso, 04019 Terracina LT",
+    "phoneNumber": "0773 764832",
+    "website": "https://www.officinemazzer.it/"
+   },
+   {
+    "title": "Toffoli Luigi di Toffoli Graziano",
+    "address": "Via Menarè, 7, 31014 Colle Umberto TV",
+    "phoneNumber": "0438 208005",
+    "website": "https://www.toffoliarredamenti.it/"
+   },
+   {
+    "title": "Studio Dentistico Associato De Toffol - Martucci",
+    "address": "Via Menarè, 112, 31014 Conegliano TV",
+    "phoneNumber": "0438 394999",
+    "website": "https://studiodentisticodtm.com/"
+   },
+   {
+    "title": "Tractorservice S.r.l. Di Mazzonetto Marco",
+    "address": "Via S. Giuseppe, 36, 31015 Conegliano TV",
+    "phoneNumber": "0438 412241",
+    "website": null
+   },
+   {
+    "title": "SPM Mould Polishing System",
+    "address": "Via L. Manzoni, 66, 31015 Conegliano TV",
+    "phoneNumber": "0438 451219",
+    "website": "http://www.spm-polish.com/"
+   },
+   {
+    "title": "EREDI MAZZER VENDITA NOLEGGIO E ASSISTENZA MACCHINE DA GIARDINAGGIO",
+    "address": "Via Nazionale, 25, 31010 Godega di Sant'Urbano TV",
+    "phoneNumber": "346 838 0288",
+    "website": "http://eredimazzer.it/"
+   },
+   {
+    "title": "Perinot Camillo Marmi Srl",
+    "address": "Via Menarè, 32, 31015 Conegliano TV",
+    "phoneNumber": "0438 400231",
+    "website": "http://www.perinotmarmi.it/"
+   },
+   {
+    "title": "Ex Cotonificio di Conegliano",
+    "address": "Via Brigata Bisagno, 14, 31015 Conegliano TV",
+    "phoneNumber": null,
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "Stefano Mazzer Maison Parrucchiere Uomo Donna",
+  "pg_phone": "+39 0438 31765",
+  "pg_street": "Via Immacolata di Lourdes, 109/A",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Stefano Mazzer Maison Parrucchiere Uomo Donna Via Immacolata di Lourdes, 109/A Conegliano",
+  "places": [
+   {
+    "title": "Stefano Mazzer Maison Parrucchiere Uomo Donna",
+    "address": "Via Immacolata di Lourdes, 109/A, 31015 Conegliano TV",
+    "phoneNumber": "0438 31765",
+    "website": "https://www.stefanomazzer.net/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Imad al King",
+  "pg_phone": "+39 389 1696409",
+  "pg_street": "Via Giuseppe Garibaldi, 10-B",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Imad al King Via Giuseppe Garibaldi, 10-B Conegliano",
+  "places": [
+   {
+    "title": "Imad al king",
+    "address": "Via Giuseppe Garibaldi, 10/B, 31015 Conegliano TV",
+    "phoneNumber": "393 023 4055",
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "Laura Valentini Parrucchieri",
+  "pg_phone": "+39 0438 453043",
+  "pg_street": "Via Monticano, 12/B",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Laura Valentini Parrucchieri Via Monticano, 12/B Conegliano",
+  "places": [
+   {
+    "title": "Laura Valentini Parrucchieri",
+    "address": "V. Monticano, 12/B, 31015 Conegliano TV",
+    "phoneNumber": "0438 453043",
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "Biblo Parrucchieri di Rita BORSOI",
+  "pg_phone": "+39 393 7772470",
+  "pg_street": "Via Vittorio Veneto, 32",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Biblo Parrucchieri di Rita BORSOI Via Vittorio Veneto, 32 Conegliano",
+  "places": [
+   {
+    "title": "Salone di Bellezza - Biblo Parrucchieri Conegliano di Rita Borsoi",
+    "address": "Via Vittorio Veneto, 32, 31015 Conegliano TV",
+    "phoneNumber": "0438 450866",
+    "website": "https://linktr.ee/bibloparrucchieri"
+   }
+  ]
+ },
+ {
+  "pg_name": "Barbieri Grando",
+  "pg_phone": "+39 379 2749508",
+  "pg_street": "Via Luigi Einaudi, 124",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Barbieri Grando Via Luigi Einaudi, 124 Conegliano",
+  "places": [
+   {
+    "title": "Barbieri Grando",
+    "address": "Via L. Einaudi, 124 B, 31015 Conegliano TV",
+    "phoneNumber": "379 274 9508",
+    "website": "https://www.barbierigrando.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Fabio Maccari Parrucchiere Biostheticien",
+  "pg_phone": "+39 0438 21218",
+  "pg_street": "Via Innocente Pittoni, snc",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Fabio Maccari Parrucchiere Biostheticien Via Innocente Pittoni, snc Conegliano",
+  "places": [
+   {
+    "title": "Creative Salon Hair Conegliano",
+    "address": "Viale Istria, 40, 31015 Conegliano TV",
+    "phoneNumber": "339 208 1299",
+    "website": "https://widget.treatwell.it/salone/100051288/menu/"
+   },
+   {
+    "title": "Fabrika Parrucchieri",
+    "address": "Viale Venezia, 12/A, 31015 Conegliano TV",
+    "phoneNumber": "0438 451852",
+    "website": "http://www.parrucchiereconegliano.com/"
+   },
+   {
+    "title": "Parrucchieri Erika Moret - Conegliano",
+    "address": "Via Martiri Cecoslovacchi, 15, 31015 Conegliano TV",
+    "phoneNumber": "339 673 0545",
+    "website": "https://moramo.it/"
+   },
+   {
+    "title": "La Barberia di Miky",
+    "address": "Viale Istria, 41, 31015 Conegliano TV",
+    "phoneNumber": "351 906 5664",
+    "website": "https://www.facebook.com/La-Barberia-di-Miky-319494908943771/?ti=as"
+   },
+   {
+    "title": "Bliss Studio - L'arte di renderti indimenticabile",
+    "address": "Via L. Einaudi, 126, 31015 Conegliano TV",
+    "phoneNumber": "376 270 7157",
+    "website": "https://www.bliss-studio.it/"
+   },
+   {
+    "title": "Salone Alchimie",
+    "address": "Via Papa Giovanni XXIII, 17A, 31015 Conegliano TV",
+    "phoneNumber": "375 705 8993",
+    "website": null
+   },
+   {
+    "title": "Salone Ettore Parrucchiere Tagliati X Il Successo",
+    "address": "Via XX Settembre, 37, 31015 Conegliano TV",
+    "phoneNumber": "0438 24450",
+    "website": "https://www.saloneettore.com/"
+   },
+   {
+    "title": "My fashion parrucchiere estetica",
+    "address": "Provincia di Treviso, Conegliano, Via G. Matteotti, 邮政编码: 31015",
+    "phoneNumber": "329 101 2910",
+    "website": null
+   },
+   {
+    "title": "Barbiere Al Cavallino Di Lot L. C. Snc",
+    "address": "Via Giuseppe Garibaldi, 3, 31015 Conegliano TV",
+    "phoneNumber": "348 554 6887",
+    "website": null
+   },
+   {
+    "title": "Salone di Bellezza - Biblo Parrucchieri Conegliano di Rita Borsoi",
+    "address": "Via Vittorio Veneto, 32, 31015 Conegliano TV",
+    "phoneNumber": "0438 450866",
+    "website": "https://linktr.ee/bibloparrucchieri"
+   }
+  ]
+ },
+ {
+  "pg_name": "Gabria Hair di Santin Gabriella",
+  "pg_phone": "+39 391 1873799",
+  "pg_street": "Via Daniele Manin, 44",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Gabria Hair di Santin Gabriella Via Daniele Manin, 44 Conegliano",
+  "places": [
+   {
+    "title": "Salone Gabry",
+    "address": "Via XX Settembre, 87, 31015 Conegliano TV",
+    "phoneNumber": "0438 412148",
+    "website": null
+   },
+   {
+    "title": "Parrucchiera Per Signora Rudatis Gabriella",
+    "address": "Via XXIV Maggio, 11/b, 31015 Conegliano TV",
+    "phoneNumber": "0438 32734",
+    "website": null
+   },
+   {
+    "title": "La Diva hair color wellness",
+    "address": "Via Daniele Manin, 39d, 31015 Conegliano TV",
+    "phoneNumber": "0438 24143",
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "La Barberia di Miky",
+  "pg_phone": "+39 351 9065664",
+  "pg_street": "Viale Istria, 41",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "La Barberia di Miky Viale Istria, 41 Conegliano",
+  "places": [
+   {
+    "title": "La Barberia di Miky",
+    "address": "Viale Istria, 41, 31015 Conegliano TV",
+    "phoneNumber": "351 906 5664",
+    "website": "https://www.facebook.com/La-Barberia-di-Miky-319494908943771/?ti=as"
+   }
+  ]
+ },
+ {
+  "pg_name": "La diva parrucchieri di monica zanatta",
+  "pg_phone": "+39 0438 24143",
+  "pg_street": "Via Daniele Manin, 39/D",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "La diva parrucchieri di monica zanatta Via Daniele Manin, 39/D Conegliano",
+  "places": [
+   {
+    "title": "La Diva hair color wellness",
+    "address": "Via Daniele Manin, 39d, 31015 Conegliano TV",
+    "phoneNumber": "0438 24143",
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "Salone Ottavio di Mutton Ottavio",
+  "pg_phone": "+39 0438 450065",
+  "pg_street": "Via Nazario Sauro, 34/36",
+  "pg_cap": "31015",
+  "pg_locality": "Conegliano",
+  "serperQuery": "Salone Ottavio di Mutton Ottavio Via Nazario Sauro, 34/36 Conegliano",
+  "places": [
+   {
+    "title": "Salone Ottavio Di Mutton Ottavio",
+    "address": "Via Nazario Sauro, 34, 31015 Conegliano TV",
+    "phoneNumber": "0438 450065",
+    "website": "http://www.saloneottavio.com/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Do.Ra S.n.c. Impianti",
+  "pg_phone": "+39 393 9182578",
+  "pg_street": "Via Gioacchino Rossini, 6",
+  "pg_cap": "98076",
+  "pg_locality": "Sant'Agata di Militello",
+  "serperQuery": "Do.Ra S.n.c. Impianti Via Gioacchino Rossini, 6 Sant'Agata di Militello",
+  "places": [
+   {
+    "title": "Do.Ra S.n.c. Impianti",
+    "address": "Via Gioacchino Rossini, 6",
+    "phoneNumber": "0941 723045",
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "Tecno Clima Impianti",
+  "pg_phone": "+39 338 3068748",
+  "pg_street": "Via Poggio D'Aquila, 20",
+  "pg_cap": "95123",
+  "pg_locality": "Catania",
+  "serperQuery": "Tecno Clima Impianti Via Poggio D'Aquila, 20 Catania",
+  "places": [
+   {
+    "title": "Tecno Clima Impianti",
+    "address": "Via Poggio D'Aquila, 20, 95123 Catania CT",
+    "phoneNumber": "095 420312",
+    "website": "https://www.tecnoclimaimpianti.com/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Sicilia Impianti",
+  "pg_phone": "+39 095 438605",
+  "pg_street": "Via Giambattista Impallomeni, 5",
+  "pg_cap": "95123",
+  "pg_locality": "Catania",
+  "serperQuery": "Sicilia Impianti Via Giambattista Impallomeni, 5 Catania",
+  "places": [
+   {
+    "title": "Sicilia Impianti",
+    "address": "Via Giambattista Impallomeni, 5, 95123 Catania CT",
+    "phoneNumber": "095 438605",
+    "website": "https://www.siciliaimpiantisrl.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Tsm Service",
+  "pg_phone": "+39 348 8582774",
+  "pg_street": "Via Fiume, 130",
+  "pg_cap": "95032",
+  "pg_locality": "Belpasso",
+  "serperQuery": "Tsm Service Via Fiume, 130 Belpasso",
+  "places": [
+   {
+    "title": "Tsm Service",
+    "address": "Via Fiume, 130, 95032 Belpasso CT",
+    "phoneNumber": "095 1693 5558",
+    "website": "https://www.tsmservice.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Sirit Impianti Tecnologici",
+  "pg_phone": "+39 095 7177363",
+  "pg_street": "Via Cipro, 2",
+  "pg_cap": "95032",
+  "pg_locality": "Belpasso",
+  "serperQuery": "Sirit Impianti Tecnologici Via Cipro, 2 Belpasso",
+  "places": [
+   {
+    "title": "Sirit Impianti Tecnologici",
+    "address": "Via Cipro, 2, 95032 Belpasso CT",
+    "phoneNumber": "095 717 7363",
+    "website": "https://www.sirit-impianti.com/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Dm Solution - Centro Assistenza Urmet ed Elkron",
+  "pg_phone": "+39 392 8671230",
+  "pg_street": "Via Nuovalucello, 156b",
+  "pg_cap": "95126",
+  "pg_locality": "Catania",
+  "serperQuery": "Dm Solution - Centro Assistenza Urmet ed Elkron Via Nuovalucello, 156b Catania",
+  "places": [
+   {
+    "title": "Dm Solution - Centro Assistenza Urmet ed Elkron",
+    "address": "Via Nuovalucello, 156b, 95126 Catania CT",
+    "phoneNumber": "392 867 1230",
+    "website": "https://www.dm-solution.net/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Luxi Impianti",
+  "pg_phone": "+39 392 3489514",
+  "pg_street": "Via Igea, 12/B",
+  "pg_cap": "95024",
+  "pg_locality": "Acireale",
+  "serperQuery": "Luxi Impianti Via Igea, 12/B Acireale",
+  "places": [
+   {
+    "title": "Luxi Impianti",
+    "address": "Via Igea, 12/B, 95024 Acireale CT",
+    "phoneNumber": "095 763 7010",
+    "website": "http://www.luxi-impianti.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Guardo Impianti",
+  "pg_phone": "+39 345 6160219",
+  "pg_street": "Via Don Giovanni Minzoni, 44",
+  "pg_cap": "95123",
+  "pg_locality": "Catania",
+  "serperQuery": "Guardo Impianti Via Don Giovanni Minzoni, 44 Catania",
+  "places": [
+   {
+    "title": "GUARDO IMPIANTI",
+    "address": "Via Don Minzoni, 44, 95123 Catania CT",
+    "phoneNumber": "345 616 0219",
+    "website": "http://www.guardoimpianti.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Z.E. Holding",
+  "pg_phone": "+39 328 6563995",
+  "pg_street": "Corso Italia, 113",
+  "pg_cap": "95129",
+  "pg_locality": "Catania",
+  "serperQuery": "Z.E. Holding Corso Italia, 113 Catania",
+  "places": []
+ },
+ {
+  "pg_name": "Lm Impianti Giuseppe La Motta",
+  "pg_phone": "+39 329 8637372",
+  "pg_street": "Viale Montenero, 4h",
+  "pg_cap": "95123",
+  "pg_locality": "Catania",
+  "serperQuery": "Lm Impianti Giuseppe La Motta Viale Montenero, 4h Catania",
+  "places": [
+   {
+    "title": "LM Impianti - La Motta",
+    "address": "Via Montenero, 4/M, 95123 Catania CT",
+    "phoneNumber": "329 863 7372",
+    "website": "https://www.lamottaimpianti.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Lepa Idraulica",
+  "pg_phone": "+39 0931 573104",
+  "pg_street": "Viale Principe di Piemonte, 82",
+  "pg_cap": "96017",
+  "pg_locality": "Noto",
+  "serperQuery": "Lepa Idraulica Viale Principe di Piemonte, 82 Noto",
+  "places": [
+   {
+    "title": "Lepa Idraulica & altro Srl",
+    "address": "Viale Principe di Piemonte, 82/84",
+    "phoneNumber": "0931 573104",
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "Tecno Clima Impianti",
+  "pg_phone": "+39 338 3068748",
+  "pg_street": "Via Poggio D'Aquila, 20",
+  "pg_cap": "95123",
+  "pg_locality": "Catania",
+  "serperQuery": "Tecno Clima Impianti Via Poggio D'Aquila, 20 Catania",
+  "places": [
+   {
+    "title": "Tecno Clima Impianti",
+    "address": "Via Poggio D'Aquila, 20, 95123 Catania CT",
+    "phoneNumber": "095 420312",
+    "website": "https://www.tecnoclimaimpianti.com/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Battiato Natale Lattoneria",
+  "pg_phone": "+39 347 0807805",
+  "pg_street": "Via XIX Traversa, 126",
+  "pg_cap": "95032",
+  "pg_locality": "Belpasso",
+  "serperQuery": "Battiato Natale Lattoneria Via XIX Traversa, 126 Belpasso",
+  "places": [
+   {
+    "title": "Lattoneria Battiato Natale",
+    "address": null,
+    "phoneNumber": null,
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "Acqua Pura e Clima Service",
+  "pg_phone": "+39 392 7528768",
+  "pg_street": "Via Galati, 64",
+  "pg_cap": "95126",
+  "pg_locality": "Catania",
+  "serperQuery": "Acqua Pura e Clima Service Via Galati, 64 Catania",
+  "places": [
+   {
+    "title": "Acqua Pura e Clima Service",
+    "address": null,
+    "phoneNumber": "392 752 8768",
+    "website": "https://www.acquapuraclimaservice.com/"
+   },
+   {
+    "title": "Tecnogroup Assistenza Climatizzatori Caldaie Hermann Galletti",
+    "address": "Via Villa Glori 34, Via Giovanni Prati, 82, 95126 Catania CT",
+    "phoneNumber": "095 491691",
+    "website": "https://www.tecnogroup-catania.it/"
+   },
+   {
+    "title": "CONDICAL è ASSISTENZA GALLETTI MITSUBISHI HERMANN FERROLI",
+    "address": "Via Novara, 25, 95128 Catania CT",
+    "phoneNumber": "095 533843",
+    "website": "http://www.assistenzacondicalcatania.it/"
+   },
+   {
+    "title": "Cantarella Clima • Vaillant Service Plus",
+    "address": "Via Trieste, 73, 95127 Catania CT",
+    "phoneNumber": "095 377656",
+    "website": "https://www.cantarellaclima.it/"
+   },
+   {
+    "title": "Climasolservice Esco Progettazione Installazione Assistenza Climatizzatori Caldaie - Fujitsu, Ariston, Savio, LG",
+    "address": "Via Vittorio Emanuele Orlando, 162, 95127 Catania CT",
+    "phoneNumber": "095 436952",
+    "website": "http://climasolservice.it/"
+   },
+   {
+    "title": "Tecs Srl",
+    "address": "Via Vitaliano Brancati, 7, 95128 Catania CT",
+    "phoneNumber": "095 359648",
+    "website": "http://www.tecsweb.it/"
+   },
+   {
+    "title": "Bra. Ma. Srl",
+    "address": "Viale Africa, 120, 95129 Catania CT",
+    "phoneNumber": "095 533555",
+    "website": "https://www.bramasrlcatania.it/"
+   },
+   {
+    "title": "Assistenza Autorizzata Whirlpool e ARISTON",
+    "address": "Viale Odorico da Pordenone, 5, 95126 Catania CT",
+    "phoneNumber": "095 226 3088",
+    "website": "https://www.newcatservicesrl-assistenza.com/"
+   },
+   {
+    "title": "Tecno Clima Impianti",
+    "address": "Via Poggio D'Aquila, 20, 95123 Catania CT",
+    "phoneNumber": "095 420312",
+    "website": "https://www.tecnoclimaimpianti.com/"
+   },
+   {
+    "title": "New Cat Service",
+    "address": "Viale Odorico da Pordenone, 5/E, 95126 Catania CT",
+    "phoneNumber": "379 177 2037",
+    "website": "https://www.newcatservicesrl-assistenza.com/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Impianti Sollevamento Acque Giuseppe Fedele",
+  "pg_phone": "+39 329 9605093",
+  "pg_street": "Via Margi, 1",
+  "pg_cap": "96011",
+  "pg_locality": "Augusta",
+  "serperQuery": "Impianti Sollevamento Acque Giuseppe Fedele Via Margi, 1 Augusta",
+  "places": [
+   {
+    "title": "Impianti Sollevamento Acque Giuseppe Fedele",
+    "address": "Via Margi, 1, 96011 Augusta SR",
+    "phoneNumber": "329 960 5093",
+    "website": "https://www.impiantisollevamentoacquefedele.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Edil Corsaro",
+  "pg_phone": "+39 095 375060",
+  "pg_street": "Via Wrzi', 213/A",
+  "pg_cap": "95126",
+  "pg_locality": "Catania",
+  "serperQuery": "Edil Corsaro Via Wrzi', 213/A Catania",
+  "places": [
+   {
+    "title": "Edil Corsaro",
+    "address": "Via Wrzì, 213/A",
+    "phoneNumber": "095 375060",
+    "website": null
+   }
+  ]
+ },
+ {
+  "pg_name": "Tsm Service",
+  "pg_phone": "+39 348 8582774",
+  "pg_street": "Via Fiume, 130",
+  "pg_cap": "95032",
+  "pg_locality": "Belpasso",
+  "serperQuery": "Tsm Service Via Fiume, 130 Belpasso",
+  "places": [
+   {
+    "title": "Tsm Service",
+    "address": "Via Fiume, 130, 95032 Belpasso CT",
+    "phoneNumber": "095 1693 5558",
+    "website": "https://www.tsmservice.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Siscaro Gianluca - Termoidraulico",
+  "pg_phone": "+39 348 2896104",
+  "pg_street": "Via Santa Maria della Catena, 48",
+  "pg_cap": "95124",
+  "pg_locality": "Catania",
+  "serperQuery": "Siscaro Gianluca - Termoidraulico Via Santa Maria della Catena, 48 Catania",
+  "places": []
+ },
+ {
+  "pg_name": "Ricatti Group",
+  "pg_phone": "+39 347 4054683",
+  "pg_street": "Via del Canalicchio, 22",
+  "pg_cap": "95125",
+  "pg_locality": "Catania",
+  "serperQuery": "Ricatti Group Via del Canalicchio, 22 Catania",
+  "places": [
+   {
+    "title": "Ricatti Group",
+    "address": "Via del Canalicchio, 22, 95125 Catania CT",
+    "phoneNumber": "347 405 4683",
+    "website": "http://www.ricattigroup.it/"
+   }
+  ]
+ },
+ {
+  "pg_name": "Impresa Orazio Grasso",
+  "pg_phone": "+39 340 0635679",
+  "pg_street": "Via Ortolani, 68",
+  "pg_cap": "95121",
+  "pg_locality": "Catania",
+  "serperQuery": "Impresa Orazio Grasso Via Ortolani, 68 Catania",
+  "places": []
+ }
+]
