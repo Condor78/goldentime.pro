@@ -2,9 +2,12 @@
 
 ## Stato
 
-- **Workflow di produzione v2 creato:** `Lead Gen - Aziende senza sito web (v2)` — ID `9hfN90QMP7LTF88Q` — **INATTIVO** (da attivare a mano).
+- **Workflow di produzione v2 creato e TESTATO end-to-end:** `Lead Gen - Aziende senza sito web (v2)` — ID `9hfN90QMP7LTF88Q` — **INATTIVO** (da attivare a mano).
   - Credenziali agganciate: Serper `2DYoDPLOH0WgJ4Z7`, Google `Google Service Account account 2` `DjYVjx24xdK6EtSK`.
   - Form path: `/form/lead-senza-sito` (URL nuovo, diverso dal workflow originale).
+  - Robustezza: nodi Serper e Sheets con **retry** (3 tentativi); Serper con `onError=continueRegularOutput` (un singolo errore su un'azienda non blocca l'intero run).
+  - **Verifica reale (11/09/2026):** run e2e Veneto/Conegliano/Elettricisti → 30 aziende → **22 righe scritte** sul foglio (SENZA_SITO_CONFERMATO 12, NON_SU_MAPS 7, DA_VERIFICARE 3). Le 8 SITO_PRESENTE sono state scartate. ⚠️ Il foglio quindi NON è più solo-intestazione: contiene già queste 22 righe di test (reali, valide) più i dati del vecchio workflow.
+  - Intestazione reale del foglio: l'ultima colonna è **`Note`** (non "Note (URL PagineGialle)"): il mapping è allineato.
 - **Workflow originale** `bG1wWiOGrNcBqhWS`: **non modificabile via MCP** (ha "MCP access" OFF). Non è stato toccato.
 
 ## Perché un workflow nuovo invece di aggiornare l'originale
@@ -25,8 +28,9 @@ Aggiornare l'originale via strumenti automatici richiede che sia attivo il flag 
 
 ## Verifica prima del primo run pulito (P6)
 
-- Il Google Sheet dovrebbe avere **solo la riga di intestazione** con queste colonne (usate dal mapping):
-  `Data ricerca | Regione | Comune | Categoria | Ragione sociale | Indirizzo | Telefono | Sito web | Stato Google Maps | Note (URL PagineGialle)`
+- Intestazione reale del foglio (allineata nel mapping):
+  `Data ricerca | Regione | Comune | Categoria | Ragione sociale | Indirizzo | Telefono | Sito web | Stato Google Maps | Note`
+- Per un primo run pulito, svuota le righe sotto l'intestazione (il foglio contiene già dati del vecchio workflow + 22 righe del test e2e).
 - Se i nomi delle colonne nel foglio differiscono da questi, allinea l'intestazione **oppure** il mapping del nodo "Scrivi su Google Sheet".
 - Dedup: il nodo usa `appendOrUpdate` con colonna chiave **Telefono** (più robusta di "Note").
 

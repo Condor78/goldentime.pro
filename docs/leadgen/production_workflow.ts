@@ -260,7 +260,7 @@ const sheet = node({
           'Telefono': expr('{{ $json.telefono }}'),
           'Sito web': expr('{{ $json.sito_web }}'),
           'Stato Google Maps': expr('{{ $json.stato_maps }}'),
-          'Note (URL PagineGialle)': expr('{{ $json.note_pg }}')
+          'Note': expr('{{ $json.note_pg }}')
         },
         schema: [
           { id: 'Data ricerca', displayName: 'Data ricerca', required: false, defaultMatch: false, display: true, type: 'string', canBeUsedToMatch: false },
@@ -272,7 +272,7 @@ const sheet = node({
           { id: 'Telefono', displayName: 'Telefono', required: false, defaultMatch: true, display: true, type: 'string', canBeUsedToMatch: true },
           { id: 'Sito web', displayName: 'Sito web', required: false, defaultMatch: false, display: true, type: 'string', canBeUsedToMatch: false },
           { id: 'Stato Google Maps', displayName: 'Stato Google Maps', required: false, defaultMatch: false, display: true, type: 'string', canBeUsedToMatch: false },
-          { id: 'Note (URL PagineGialle)', displayName: 'Note (URL PagineGialle)', required: false, defaultMatch: false, display: true, type: 'string', canBeUsedToMatch: false }
+          { id: 'Note', displayName: 'Note', required: false, defaultMatch: false, display: true, type: 'string', canBeUsedToMatch: false }
         ]
       },
       options: { cellFormat: 'RAW' }
